@@ -1,0 +1,3 @@
+function demoFnc() {
+    alert("Hello!");
+}
