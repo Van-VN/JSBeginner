@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Các cách xuất dữ liệu bằng JS</h1>
+<h2>Xuất dữ liệu bằng console.log()</h2>
+<button onclick="showLog()">Click để console.log</button>
+<br>
+<script>
+    function showLog() {
+        console.log("Ví dụ bằng xuất dữ liệu trong Console.log");
+    }
+</script>
+<h2>Xuất dữ liệu bằng document.write()</h2>
+<button onclick="message()">Click để hiện dữ liệu bằng document.write</button>
+
+<script>
+    function message() {
+        document.write("Dữ liệu xuất bằng document.write \n");
+        document.write("<br><a href='index.html'><button>Back</button></a>");
+    }
+</script>
+
+<h2>Xuất dữ liệu bằng document.getElementById()</h2>
+<button onclick="demo()">Demo</button>
+<p id="elementId"></p>
+<script>
+    function demo() {
+        document.getElementById("elementId").innerHTML = "Hello";
+    }
+</script>
+
+<h2>Xuất dữ liệu bằng alert</h2>
+<button onclick="alert('Xin chào')">Click me</button>
+
+</body>
+</html>
